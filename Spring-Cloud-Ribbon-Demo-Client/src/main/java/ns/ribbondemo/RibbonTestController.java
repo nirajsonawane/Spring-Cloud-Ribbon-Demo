@@ -15,7 +15,6 @@ public class RibbonTestController {
 
     @GetMapping
     public String getMessage() {
-        System.out.println("Calling User Service using Feign Client!!");
         return helloClient.getMessage();
     }
 
